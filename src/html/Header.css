@@ -1,0 +1,6 @@
+.link{
+    font-size: 1.2rem;
+}
+.link:hover{
+    cursor: pointer;
+}
