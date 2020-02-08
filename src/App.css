@@ -1,4 +1,13 @@
 .App {
   text-align: center;
 }
+.link{
+  font-size: 1.2rem;
+  color: #ffffffaf;
+}
+.link:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffffff;
+}
 

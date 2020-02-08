@@ -1,0 +1,44 @@
+.cardsBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardsBox .cardBox{
+    width: 90%;
+    margin: auto;
+    height: 250px;
+    padding: 0 5px 20px;
+}
+.cardsBox .cardBox .card{
+    height: 100%;
+    white-space: normal;
+    text-align: left;
+    padding: 10px;
+}
+
+/**Is no wrap **/
+
+.cardsBox.isNoWrap{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.cardsBox.isNoWrap .cardBox{
+    width: 210px;
+}
+.cardsBox.isNoWrap .cardBox .card{
+    width: 200px;
+}
+@media screen and (min-width: 768px) {
+    .cardsBox .cardBox{
+        width: 20%;
+        height: 250px;
+    }
+    .cardsBox .cardBox .card:hover{
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    .cardsBox .cardBox .card{
+        height: 100%;
+    }
+}
